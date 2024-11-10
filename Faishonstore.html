@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        .container{
+            width:800px;
+            height: 1500px;
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            background-color: rgb(98, 171, 240);
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 50px;
+            padding:28px;
+        }
+        nav{
+            display: flex;
+            gap:1rem;
+            justify-content: space-evenly;
+            margin:10px;
+        }
+        img{
+            height: 100px;
+            width: 100px;;
+        }
+        p{
+            font-size: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        .main-content{
+            background-color: lightgrey;
+            padding:38px;
+        }
+        .shop{
+            width: 720px;
+            height: 300px;
+        }
+        table{
+            width:720px;
+            height: 200px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        table th{
+            background-color: rgb(81, 153, 221);
+        }
+        table, th, td{
+            border:1px solid black;
+            border-collapse: collapse;
+            padding:10px;
+        }
+        span{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FASHION STORE</h1>
+        <nav>
+            <div class="t-shirt">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCPTdkCBTuYfSi-U_2zbzKH4bW1zyTEmLz0w&s" alt="t-shirt">
+                <p>T-shirts</p>
+            </div>
+            <div class="glass">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx3bNijAdVsDESibbRjC4dFExl2HnfQeWNsw&s" alt="glass">
+                <p>Sunglasses</p>
+            </div>
+            <div class="shirt">
+                <img src="data:image/webp;base64,UklGRioMAABXRUJQVlA4IB4MAAAQLgCdASptAIUAPlEYlEojoSOjktBwCgljAM30K26PqCjp5n71tN3BEIHpp/1PpLenz0Tc536S+hb9Yn+kerhNpmK/n3+De2nIm6U8y/rk+c/ML5Cdrv7z2o/ZVgye4hr/NH69f730Q/+B6QeMH88/1vsEfyX+w/9P/Be8j/ff+X7sffB9U/+H3Ff5r/df+Z1/v3F9mn9sVU6oKzKDvSdQXC2djxBmAKGXElXCm6i0KxEyZ+QsazaheBOB2h2KtvzjM5HguZqKb/OUd4wIhVD1/KUrP6LfQTE7dZvP+vEBZrdeio5z8GdSd5W1KKYqoeZqTvReF0RwYAIsJlCe4ig8mslT62SMB1tBc6sm4fnhsiFGXIY5ZnzZEz5KRSiTUdiIIv70qCwdnbU+g+KGHmaEmim4RJoGveGKhtVS86+EBhkeeWH5cM/n2zu1SEtJdb11vZJkZapgxlnqNWQwuzTYH22xjWEJ3diIf/hGTPDFcT6zzxi0RUqbAAD+/iRiL60P9+fNjXQexRMyCf30vf9Xp/NfxQzxwFzKXXG6pHJwaSIZMkP8351VFM1Y3xE9xUmn0CRIPdsfTLeJ3p9k0EYwqvq3K3qUox/un0CSlNOTQXA3jAzMTZz977o1Hcjn3zn2O4nhqYIz2zayL63lONxBdsZ8wDZ01yULsOMJ764vMIQc3iKZorRVMbiAbApO1dEMKXi8UsOrbNSUpvAjLph7tTSVHuid15BWZlGL/DM4KXRKpLch0LA6J4QtLxtQZIspG0KlT09ZWNKHyISuMM3de/J8RjhkoGXznb7dfL1yF3kOcJMboU12TUHA9J8cZu5Ljqgg/o+eWqd+tJm9wSR3+yplce10o7Zjzzbw7C4HW9N3q2jRVy5+Yahffz3dM07T9xNPcwMmNbb6zfVNTGgVUtz4XEtKLOQpXdS9eeWD8NSjJ066gv8FlptSgYbRSY9EtF6DUTJhQAyKR8X/OgoHKLmqby2N4N2pYxYgEllpIaznrN0U/9XNWyeJ6/Ev/9gZW6nmJ0TchMdsAmXfd7TCb/aYYsA36cJPqiDBs7R/VuG+JkiJ2Zm8iwE8NucCkzIrAQlGVYBu5jraxg4KqGQCmKJIauSnPoLdhjeAmNjsAJtj1CFJVMXpu8GNhzP0gp1vK5+E0KwbnKlMDR1O+ZuWDkIx3+5y90Sh4jMPwNCKwpO9OtR62uZQR3t8qf6CyNRWmOF4Bx1wH5op1hIS0DV67z0V9u4S1up52cdhbRvXvBXwiAghOAVjFr+5IMDxz5VuumTXubctDAVP+F9EmR6jPUI+3EY9GKP/QssaYb3WusSE9vLVHGOyRej5l3++eb+5Ai0iV5CEAJcD/2t/DX58/P8ajsLsM87Yc8EKy5sKZ4LABjUzoa/3YiWhNPbewSNXUeD/M3NkbFDTlZLdnGkcrrHgPL5W15zDIHXTysZnjBf1+faJ3j116tDdC+orqTLW9Fymlhb8+Z2EeFwSP/4JjNH4T9chJrq8mee03etm0V0jxUar6s1ZCaF4I+HDQQHlGC6nIrOqdPLi0/nlaAk0Evz2vnx8fO8dHET3H9599izpVaRigcjltqLKYLkWYEIKx/kOVDiVBwaR3zKIxNkU958daQZCs/ntJxBcWGjz3nfn6ZF3dJfcZbl9cJme/goVwVQmxpLbESjrMyjjaeWzL1ds+yntuTUtOA72wlYxinWuNI1zeASG4HgX6qYd1obMxMQhz+fCzufRrttywnKaLhmYl3ldwNC8aXZZ7XqdCpI3bWMt5d+JMS7kY5uXllIIHeVLUmiEI74j0/nu5GIaghkKP+/5ncQGnW5x3U6KfEhezEUq7MDsQJI5csRFTk9a98MyceevccD6ZNs2WV41UP3OFb6C6JAPHXI36/SHxrepvn7rRw1vke5Mq2rDdkCHlvGq9qlxK4Tu5eY900SnwX0kogt0tzqeX6tdwi/b0m6r62ybw3cDXswrWJhYLd77BXkZS7JP1f+62+g6npP018J4oRV4Yrgdq1qegdby2M27NkgLvE3ub32sGdJWqPtRWxWboA4JvxRBsEItYRWCRSiKaU2F0+GjF2sFO3FNZEJX5YcUcuMx4xg7YYq0VrEjlJi5yKQmzNTITCJqMa/CxjHdhuB/QG/cE729dY2pvNneHGtiQV3EVbbKOVfmz0aelYCaL++XmZR7W8LpnVxlIa9HcnElVBTFWqQ4DmRE+cR1QFH0e+Oc0FXssOvnGcdQ5xws67C5AtNmmkMc/MXVtyfB954UjGWmR1zEBysIT5A/R75MfMfjJSDV2Xwe/FnVeNqI92DTcYLkSoLpDi4QSbhNJhmqa4wxU0zC+HeR2Nc6s0e0CA/KdQMptGVLyukVWa1cqNoYqTFRdpR2zLzbH+iP8q/wZD1iufiVFpJ73R2Nq9QHd8XKLpShFJn42qLbzK/c82h0/F9iECuVn9BPLVix9GoIJkzRk1Ufz4Qf4UGF84uK67AJdKRL9z2r6yv3bHGJr328gOddTDXbrbGcREKCj46RkJBef9ffxGMSUvCWaEKzmZpq1fIpreiZ9TJ4K73GZSe6L1nFWIgulUKpFtahPv+KnVgTFg5o3pBPXRtLvRhl8x2wBp4d847ZkRHnCsyi1EFCFgU/qL2ym9QI3KXXgC70TOcpcqJzZ/R16uLVDwurHMBNNaWB6QakpyL+xqC3qwnx+5phWk+gt/KetWoIEpDxNWWT6HS9HA1ZIr+ugrDAZGwWDGiQEp2Wt57l0MSPs6nV+iYGcJqcCI6gCMexMq5DsD/HZN3EKO16F/kzWKFZCFvWa414dIwURvBwPou7Ur0RK7YV5fzgMDeSw3hADbGJ13fo9ZpeTWJketPzMNHdDhREaEEWWoHhMBWG3P+Q8olhYmi7BMnW7RYGyH7RxvucjrmZpgqRhsPfE2wMxDuwdhEiPvbYl8MOC+geiMqG4fVRwixXX7CZXSknCyW+/tqIMJl0if73Q+7GBOKs9B1tDGjsF73QOUOA36OycNepfLKgbtxmnzivwuFE8GI9hpe9WuD10/h4+XzgMitM99tCcvXFi8tJ9zTTjnTwAMwaWTEeMpBkDuEnoFt9b93gXSC85Cgt817ku7iMOqgXIl3F6gBwyWqdamzxX67OlL91aRvdGSXoF+1qIBgBO28ZeDWFteIH8UihMdhemY2tQhOzxXzi77NRL9NVUs244EMnvrivr5zn0yMZMW8A47bTK4j3085vyDg3OWrPAy0fOOduzbkfowf/37esUHYJOitRNxcAxk2h7Vf8HyBFoQ1MKyc68nH44GqtX0ssOTNLgiaOWkKOMoFa47zD7CPeXu+ghy6ugQdBtyA2Y5IHuzsQsBLeQMkb+FHBHeTq3GAV8052PqJlQlwQYCdmHIjTepyj/ZtaKghtKNRhcUgUVG8NAdSK1Gj0TmkcbwSGrXkrskJ7m3pd+ZRc5+OibkKFs/KxCz0K1Hp2LEdxLTBwt/TKQhZIpJ0TIIgH71kPhPHXbCcxbCuoJuHOORd95j0E2QvwCg3syttiLQitNCy+/J9Ue8ohuQQLNlkyPdyviaFM4hCBEjK6G6aE5H34BSMNBhMlpGafhfIWgiPQ9oHx02Hi7QWcqWyfvv+IJTWxDKodOlV14KD0JQiM2FEN2WSer2dQvfE1W1BqGurld1DD9QlJjH3dqeGjHHbaZCuiXkvec7tInBOw2Z5fQNtXePd9sGBae53v/gkq5SVaxtXJudnWJBNHJf6IAd8ub4RUI+0YdfMRCgc39Bz693VWExSRXIlWL9OIteDcT1NYBG7n40hiemrzCsFS204Bd/XnWLIKW0z+bQ7+XCvxZxu7yoz5mR5g6D88V53NsJRzVhz9X67J0zQuf4W2wWYtZWRypJwC+fFJp869KnhLNbc+iBRKIPChvzyTUYjZLs7Umr0GPEv2SoZZx/7JtKaTvC+xPdrgHPar9QiPX36Au9IC5Rk+2LXf+oYH/x7xLDkcqwHa81suuX8ak66wz85SoG/cQRwYKM2hrFRFEkUHxfjsshO/wG2xYZjplSkdzfwd/uTWsbKvvVOjBXe5CWD9YfYbCO5m/6M4lZq/fvUpoOvXy5c4vOK/Ov454F8RBTxgPbgE8kGrkepg+7ZIVYAAAAA=" alt="shirt">
+                <p>Shirts</p>
+            </div>
+            <div class="shoes">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIHsrlzveF0O7g6Kw06IaJs118wNMGQnnZeA&s" alt="shoes">
+                <p>Sunglasses</p>
+            </div>
+            <div class="pants">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2l3sZ9UI-huhk0BKkN_Idec90zejcHikd84Z5OsSlOSrpj7HhIzZimeUnoVFbdTiynIw&usqp=CAU" alt="pants">
+                <p>Sunglasses</p>
+            </div>
+            <div class="perfumes">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlTXC629TtIdno__x_XMlUi1TcYVdP3gq_9Q&s" alt="perfumes">
+                <p>Sunglasses</p>
+            </div>
+        </nav>
+        <div class="main-content">
+            <img class="shop" src="https://cdn.codechef.com/download/Contest+images/ROTEST/shopingtime.jpeg" alt="shop">
+            <h1 style="color:black;background-color: lightgrey;margin-top:-30px;">OUR UPCOMING SALES</h1>
+            <table>
+                <tr><th>Festival</th>
+                <th>Discount</th>
+                <th>Starting Date</th>
+                <th>Ending Date</th></tr>
+                <tr>
+                    <td>Independence Day</td>
+                    <td><span>30%</span> 40%</td>
+                    <td>10 August</td>
+                    <td>18 August</td>
+                </tr>
+                <tr>
+                    <td>Diwali</td>
+                    <td><span>30%</span> 40%</td>
+                    <td>10 August</td>
+                    <td>18 August</td>
+                </tr>
+                <tr>
+                    <td>Christmas</td>
+                    <td><span>30%</span> 40%</td>
+                    <td>10 August</td>
+                    <td>18 August</td>
+                </tr>
+                <tr>
+                    <td>New Year</td>
+                    <td><span>30%</span> 40%</td>
+                    <td>10 August</td>
+                    <td>18 August</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

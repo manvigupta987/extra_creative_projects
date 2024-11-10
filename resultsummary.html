@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Summary Component</title>
+    <style>
+        *{
+            font-family: "Hanken Grotesk", sans-serif;
+            text-align: center;
+            font-weight: 700;
+        }
+        body{
+            background-color: rgb(236, 236, 236);
+        }
+        .container{
+            display:flex;
+            height: 700px;
+            padding:25px;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .result{
+            background-color: rgb(46, 43, 233);
+            border-radius: 40px;
+            width:100%;
+            padding:25px;
+        }
+        .res{
+            color: rgb(161, 161, 161);
+            font-size: 30px;
+        }
+        .circle{
+            background-color: rgb(78, 33, 202);
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            padding:30px;
+            position: relative;
+            left:90px;
+            margin:15px;
+        }
+        h1{
+            color:white;
+            font-size: 70px;
+        }
+        .content{
+            color: white;
+            line-height:24px;
+           font-weight: normal;
+            font-size: 18px;
+            padding-top: 15px;
+        }
+        .summary{
+            width:100%;
+            padding:25px;
+            background-color: white;
+            border-radius: 40px;
+        }
+        .main-area{
+            display: flex;
+            flex-direction: column;
+        }
+        .a{
+            display: flex;
+            justify-content: space-around;
+            height: 45px;
+            width: 400px;
+            border-radius:15px;
+            padding-top:25px;
+            padding-bottom:0px;
+            margin:10px;
+            margin-left:20px;
+            font-size: 20px;
+        }
+        .one{
+            background-color: rgb(252, 227, 227);
+            color: rgb(255, 87, 87);
+        }
+        .two{
+            background-color: rgb(255, 235, 199);
+            color:rgb(255, 176, 31);
+        }
+        .three{
+            background-color: rgb(217, 237, 232);
+            color: rgb(0, 189, 145);
+        }
+        .four{
+            background-color: rgb(217, 225, 247);
+            color:rgb(17, 37, 212);
+        }
+        .button{
+            background-color: rgb(48, 59, 90);
+            color:white;
+            border-radius:45px;
+            width:150px;
+            padding:30px;
+            letter-spacing:1px;
+            font-size: 18px;
+            margin-left:auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        .right{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            <h2 class="res">Your Result</h2>
+            <div class="circle">
+                <h1>76</h1>
+                <p style="color: rgb(161, 161, 161); margin-top:-30px;">of 100</p>
+            </div>
+            <h1 style="font-size: 40px;">Great</h1>
+            <p class="content">You scored higher than 65%<br> of the people who have <br>taken these tests.</p>
+        </div>
+        <div class="summary">
+            <h2>Summary</h2>
+            <div class="main-area">
+                <div class="a one">
+                    <div class="left"><img src="https://stanex96.github.io/results-summary-component-main/icon-reaction.svg">Reaction</div>
+                    <div class="right">80/100</div>
+                </div>
+                <div class="a two">
+                    <div class="left"><img src="https://stanex96.github.io/results-summary-component-main/icon-memory.svg">Memory</div>
+                    <div class="right">92/100</div>
+                </div>
+                <div class="a three">
+                    <div class="left"><img src="https://stanex96.github.io/results-summary-component-main/icon-verbal.svg">Verbal</div>
+                    <div class="right">61/100</div>
+                </div>
+                <div class="a four">
+                    <div class="left"><img src="https://stanex96.github.io/results-summary-component-main/icon-visual.svg">Visual</div>
+                    <div class="right">72/100</div>
+                </div>
+                <div class="button">Continue</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
