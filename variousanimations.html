@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Animations</title>
+    <style>
+        .container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: beige;
+}
+.loader{
+    height: 50px;
+    width: 50px;
+    margin:20px;
+    padding: 10px;
+}
+#load1{
+    border: 10px solid beige;
+    border-top: 10px solid blue;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#load2{
+    background-color: aquamarine;
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite ;
+}
+@keyframes pulse{
+    0%{
+        transform: scale(1.8);
+    }
+    50%{
+        transform:scale(0);
+    }
+    100%{
+        transform: scale(1.8);
+    }
+}
+#load3{
+    background-color: rgb(255, 3, 150);
+    border-radius: 50%;
+    animation: bounce 1.5s ease-in-out infinite ;
+}
+@keyframes bounce{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform:translateY(-100px);
+    }
+}
+#load4{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#load4::before, #load4::after{
+    content: '';
+    width:8px;
+    background-color: blueviolet;
+    animation: stretch 1.2s linear infinite;
+}
+#load4::after{
+    animation-delay: -0.6s;
+}
+@keyframes stretch{
+    0%,40%,100%{
+        transform: scaleY(0.4);
+    }
+    20%{
+        transform: scaleY(1);
+    }
+}
+#load5{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#load5::before, #load5::after{
+    content: '';
+    width:15px;
+    height:15px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    animation: dots 1.2s ease-in-out infinite;
+}
+#load5::after{
+    animation-delay: -0.6s;
+}
+@keyframes dots{
+    0%,80%,100%{
+        transform: scale(0);
+    }
+    40%{
+        transform:scale(1);
+    }
+}
+#load6{
+    border:8px solid transparent;
+    border-top: 8px solid rgb(248, 120, 0);
+    border-bottom: 8px solid rgb(248, 120, 0);
+    border-radius: 50%;
+    animation: circle-fade 1.5s linear infinite;
+}
+@keyframes circle-fade{
+    0%,100%{
+        opacity:0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+#load7{
+    height: 60px;
+    width: 60px;
+    border: 10px solid crimson;
+    border-top: 10px solid transparent;
+    border-radius: 50%;
+    animation: dual-ring 1.5s linear infinite;
+}
+@keyframes dual-ring{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loader" id="load1"></div>
+        <div class="loader" id="load2"></div>
+        <div class="loader" id="load3"></div>
+        <div class="loader" id="load4"></div>
+        <div class="loader" id="load5"></div>
+        <div class="loader" id="load6"></div>
+        <div class="loader" id="load7"></div>
+        <div class="loader" id="load8"></div>
+        <div class="loader" id="load9"></div>
+        <div class="loader" id="load10"></div>
+        <div class="loader" id="load11"></div>
+    </div>
+</body>
+</html>
